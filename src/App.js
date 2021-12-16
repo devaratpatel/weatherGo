@@ -42,6 +42,7 @@ function App() {
             <p className="weather">{weatherData.weather[0].main}</p>
           </div>
         )}
+        {weatherData.cod === '404' ? <p>City not found.</p> : <></>}
       </div>
     </div>
   );
